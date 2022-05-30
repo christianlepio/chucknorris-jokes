@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/chucknorris-jokes/static/css/main.673027ae.css",
+    "main.js": "/chucknorris-jokes/static/js/main.f8eb87f5.js",
+    "static/media/chucknorris-logo.png": "/chucknorris-jokes/static/media/chucknorris-logo.cabd9b85bc75f1e4f0df.png",
+    "index.html": "/chucknorris-jokes/index.html",
+    "main.673027ae.css.map": "/chucknorris-jokes/static/css/main.673027ae.css.map",
+    "main.f8eb87f5.js.map": "/chucknorris-jokes/static/js/main.f8eb87f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.673027ae.css",
+    "static/js/main.f8eb87f5.js"
+  ]
+}
