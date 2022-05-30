@@ -1,0 +1,212 @@
+html, body{
+  background-color: aliceblue;
+  font-family: 'Century Gothic';
+  text-align: center;
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+}
+h1{
+  font-size: 2.3em;
+}
+.category{
+  text-transform: capitalize;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+.norris-logo{
+  margin-top: 1em;
+  width: 40%;
+}
+.srch-joke{
+  margin-top: 3em;
+  margin-right: 3em;
+}
+.srch-input{
+  height: 2.5em;
+  width: 15em;
+  padding-left: 0.9em;
+  border-radius: 0.4em;
+  border: 1px solid gray;
+  font-family: 'Century Gothic';
+  background-color: white;
+}
+.srch-btn{
+  height: 2.2em;
+  width: 2.2em;
+  margin-left: 0.3em;
+  font-size: 1em;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 0.4em;
+  cursor: pointer;
+}
+.cat-section p{
+  font-weight: bolder;
+}
+.cat-section button{
+  text-transform: capitalize;
+  padding: 0.5em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  margin-bottom: 0.6em;
+  border: none;
+  border-radius: 0.4em;
+  cursor: pointer;
+  font-family: 'Century Gothic';
+}
+.cat-btn-0, .cat-btn-13{
+  background-color: #dc3545;
+  color: white;
+}
+.cat-btn-1, .cat-btn-12{
+  background-color: #fd7e14;
+  color: white;
+}
+.cat-btn-2, .cat-btn-11{
+  background-color: #ffc107;
+  color: white;
+}
+.cat-btn-3, .cat-btn-10{
+  background-color: #198754;
+  color: white;
+}
+.cat-btn-4, .cat-btn-9{
+  background-color: #20c997;
+  color: white;
+}
+.cat-btn-5{
+  background-color: #0d6efd;
+  color: white;
+}
+.cat-btn-6{
+  background-color: #6610f2;
+  color: white;
+}
+.cat-btn-7{
+  background-color: #6f42c1;
+  color: white;
+}
+.cat-btn-8{
+  background-color: #d63384;
+  color: white;
+}
+.joke-section{
+  margin-top: 0.6em;
+  display: grid;
+  grid-gap: 1.2em;
+}
+.card{
+  box-shadow: 0 .125rem .25rem rgba(0,0,0, .075);
+  border-radius: 1em;
+  padding: 1em;
+  background-color: white;
+}
+.card-header{
+  text-transform: uppercase;
+}
+.card-header .laps{
+  transform: scaleX(-1);
+}
+.card-body{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.like-btn, .dislike-btn{
+  transform: scaleX(-1);
+  font-size: 1.4em;
+  color: white;
+  padding: 0.3em;
+  border: none;
+  background-color: #0d6efd;
+  border-radius: 0.35em;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+.like-btn{
+  margin-right: 0.3em;
+  padding-left: 0.53em;
+  padding-right: 0.53em;
+}
+.dislike-btn{
+  transform: scaleX(1);
+  background-color: #dc3545 !important;
+  margin-right: 0.3em;
+  padding-left: 0.53em;
+  padding-right: 0.53em;
+}
+.likeCount, .dislikeCount{
+  text-align: center;
+  color: white;
+  padding: 0.3em;
+  border-radius: 0.4em;
+  font-weight: bold;
+  font-family: 'Century Gothic';
+}
+.likeCount{
+  margin-right: 0.5em;
+  background-color: #0d6efd;
+}
+.dislikeCount{
+  margin-left: 0.3em;
+  background-color: #dc3545;
+}
+.load-section h5{
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+.load-btn{
+  padding: 1em;
+  background-color: transparent;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-radius: 0.68em;
+  border: 1px solid #6f42c1;
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  color: gray;
+  cursor: pointer;
+}
+
+@media (max-width: 575.98px) { 
+  .nav{
+    display: block;
+  }
+  .norris-logo{
+    width: 60%;
+  }
+  .srch-input{
+    height: 2.5em;
+    width: 75%;
+    padding-left: 0.9em;
+  }
+  .srch-joke{
+    margin: auto;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .joke-section{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .joke-section{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .joke-section{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .joke-section{
+    grid-template-columns: repeat(4,1fr);
+  }
+}
