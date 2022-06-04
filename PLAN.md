@@ -3,7 +3,7 @@
 
 ---
 
-### <--  P L A N  -->
+###  P L A N 
 
 - Install node js and react js
 - Study how to use axios http library and how it works.
