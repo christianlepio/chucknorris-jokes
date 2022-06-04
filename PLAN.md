@@ -64,25 +64,28 @@ axios.get(`https://api.chucknorris.io/jokes/search?query=${query}`)
         </div>
    ```
 
--- I decided to slice the number of value of the state variable "jokesToShow".
+- I decided to slice the number of value of the state variable "jokesToShow".
 
--- The codes below is for load more button...
+- The codes below is for load more button...
 
-        <div className='load-section'>
-          {
-            pagination >= jokesToShow.length ? <h5>---------- &nbsp; E N D &nbsp; O F &nbsp; J O K E S &nbsp; ----------</h5>:
-            <button type='button' className='load-btn' onClick={clickIncrement}><i className="fa-solid fa-angles-down"/>&nbsp; LOAD MORE JOKES &nbsp;<i className="fa-solid fa-angles-down"/></button>
-          }
-        </div>
-	
+     ```js
+	<div className='load-section'>
+	  {
+	    pagination >= jokesToShow.length ? <h5>---------- &nbsp; E N D &nbsp; O F &nbsp; J O K E S &nbsp; ----------</h5>:
+	    <button type='button' className='load-btn' onClick={clickIncrement}><i className="fa-solid fa-angles-down"/>&nbsp; LOAD MORE JOKES &nbsp;<i className="fa-solid fa-angles-down"/></button>
+	  }
+	</div>
+
 	//Load more button function. This will increase the value of pagination variable to 5.
 
 	const clickIncrement = () =>{
 	  setPagination(pagination+=5)
-  	}
+	}
+     ```
 
--- The codes below is for like and dislike count or score function.
-   
+- The codes below is for like and dislike count or score function.
+
+```js
   //This is for like count function...
 
   const likeJoke = (idd) =>{
@@ -111,9 +114,11 @@ axios.get(`https://api.chucknorris.io/jokes/search?query=${query}`)
 
     setRates({...rates, id:listID, likes:listLikes, dislikes:listDislikes})
   };
+```
 
--- The codes below is to display all buttons for various categories from chucknorris API...
-        
+- The codes below is to display all buttons for various categories from chucknorris API...
+
+```js
 	<div className='cat-section'>
           <p>| C A T E G O R Y |</p>
           {
@@ -127,10 +132,12 @@ axios.get(`https://api.chucknorris.io/jokes/search?query=${query}`)
           }
           <button key='uncategorized' type='button' className='cat-btn-13' onClick={()=>displayCategory('')}>Uncategorized</button>
         </div>
+```
 
--- The codes below is to store all jokes to its specific categories and also to change the value of "jokesToShow" variable.
+- The codes below is to store all jokes to its specific categories and also to change the value of "jokesToShow" variable.
    All jokes that doesn't have its category will be categorized as "Uncategorized".
 
+```js
   const displayCategory = (ucateg) =>{
     jokes.map((jk) =>{
       if(jk.categories == ucateg){
@@ -140,10 +147,12 @@ axios.get(`https://api.chucknorris.io/jokes/search?query=${query}`)
     } )
     setPagination(8)
   }
+```
 
 -- For searching jokes I used axios.get(`https://api.chucknorris.io/jokes/search?query=${query}`) to fetch all possible results.
    Below is the code...
 	
+```js
 	//This is for search input and button...
 
           <div className='srch-joke'>
@@ -165,3 +174,4 @@ axios.get(`https://api.chucknorris.io/jokes/search?query=${query}`)
 	    getJokes();
 	    setPagination(8)
 	}
+```
