@@ -1,4 +1,6 @@
 # CHUCKNORRIS-JOKES
-ReactJS app with Chucknorris API integration
+##### ReactJS app with Chucknorris API integration
+
 ---
+
 ### <--  P L A N  -->>
