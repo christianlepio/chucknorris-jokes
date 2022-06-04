@@ -13,13 +13,22 @@
 - Fetch all jokes from chucknorris API using 
 
 ```js
-axios.get('https://api.chucknorris.io/jokes/search?query=all').
+axios.get('https://api.chucknorris.io/jokes/search?query=all')
 ```
 
 - Store all jokes to state array variable "jokes".
-- Fetch all available categories in chucknorris API using axios.get('https://api.chucknorris.io/jokes/categories').
+- Fetch all available categories in chucknorris API using 
+
+```js
+axios.get('https://api.chucknorris.io/jokes/categories')
+```
 - Store all fetched categories to state variable "category".
-- Fetch all jokes result from chucknorris API using axios.get(`https://api.chucknorris.io/jokes/search?query=${query}`)
+- Fetch all jokes result from chucknorris API using 
+
+```js
+axios.get(`https://api.chucknorris.io/jokes/search?query=${query}`)
+```
+
    and store it to a state variable "jokesToShow"
 - The default value of the state variable "query" is "all".
 - The codes below is to display jokes and it depends on what "jokesToShow" variable value is. This will also 
