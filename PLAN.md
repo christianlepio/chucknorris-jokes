@@ -149,7 +149,7 @@ axios.get(`https://api.chucknorris.io/jokes/search?query=${query}`)
   }
 ```
 
--- For searching jokes I used axios.get(`https://api.chucknorris.io/jokes/search?query=${query}`) to fetch all possible results.
+- For searching jokes I used axios.get(`https://api.chucknorris.io/jokes/search?query=${query}`) to fetch all possible results.
    Below is the code...
 	
 ```js
