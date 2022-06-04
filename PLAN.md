@@ -10,7 +10,12 @@
 - Study and explore chucknorris API.
 - Design the front-end of your web project it must be responsive to any kind of devices.
 
-- Fetch all jokes from chucknorris API using ```axios.get('https://api.chucknorris.io/jokes/search?query=all').```
+- Fetch all jokes from chucknorris API using 
+
+```js
+axios.get('https://api.chucknorris.io/jokes/search?query=all').
+```
+
 - Store all jokes to state array variable "jokes".
 - Fetch all available categories in chucknorris API using axios.get('https://api.chucknorris.io/jokes/categories').
 - Store all fetched categories to state variable "category".
