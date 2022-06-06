@@ -1,5 +1,5 @@
 # CHUCKNORRIS-JOKES
-##### ReactJS app with Chucknorris API integration
+##### Description: ReactJS app with Chucknorris API integration
 ###### View Demo here: https://christianlepio.github.io/chucknorris-jokes/
 
 ---
